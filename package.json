@@ -1,0 +1,66 @@
+{
+  "name": "create-react-catchapp",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariocatch/create-react-catchapp.git",
+    "directory": "create-react-catchapp"
+  },
+  "files": [
+    ".setuprc",
+    "app"
+  ],
+  "keywords": [
+    "react",
+    "bootstrap",
+    "boilerplate",
+    "babel"
+  ],
+  "bin": {
+    "create-react-catchapp": "./index.js"
+  },
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "mariocatch",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": "Create a barebones react application configured with babel, eslint, and webpack.",
+  "dependencies": {
+    "cross-spawn": "^6.0.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
+    "parser": "eslint",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "no-debugger": "off",
+      "no-console": "off",
+      "no-unused-vars": "warn"
+    },
+    "root": true
+  }
+}
